@@ -141,13 +141,13 @@
   max-width: 734px;
   background-color: #0D0D0D;
   text-align: left;
-  padding: 87px 29px 65px 32px;
+  padding: 82px 46px 28px;
   border: 5px solid #F6F4F3;
 }
 
 .remodal-close {
-  top: 20px;
-  right: 20px;
+  top: 13px;
+  right: 13px;
   left: auto;
   width: 33px;
   height: 33px;
@@ -168,12 +168,17 @@
   font-size: 20px;
   line-height: 24px;
   color: #F6F4F3;
-  margin: 0 0 20px;
+  margin: 0 0 24px;
 }
 
-.remodal small {
+.remodal p span {
+  color: #FDB913;
+}
+
+.remodal p.small {
   font-size: 11px;
   line-height: 12px;
+  margin-top: -27px;
 }
 
 .blackfriday22-hero {
