@@ -7,6 +7,24 @@
     gap: 20px;
   }
   &__item{
+    text-decoration: none!important;
+    &:hover{
+      cursor: pointer;
+      .blackfriday22-category__figure{
+        background: linear-gradient(83.9deg, #FDB913 22.22%, #FF7A00 71.71%);
+      }
+      .blackfriday22-category__name{
+        color: #FDB913!important;
+      }
+    }
+    &.active{
+      .blackfriday22-category__figure{
+        background: linear-gradient(83.9deg, #FDB913 22.22%, #FF7A00 71.71%);
+      }
+      .blackfriday22-category__name{
+        color: #FDB913;
+      }
+    }
   }
   &__figure{
     border-radius: 50%;

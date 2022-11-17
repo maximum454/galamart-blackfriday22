@@ -359,6 +359,32 @@
   gap: 20px;
 }
 
+.blackfriday22-category__item {
+  text-decoration: none !important;
+}
+
+.blackfriday22-category__item:hover {
+  cursor: pointer;
+}
+
+.blackfriday22-category__item:hover .blackfriday22-category__figure {
+  background: -o-linear-gradient(6.1deg, #FDB913 22.22%, #FF7A00 71.71%);
+  background: linear-gradient(83.9deg, #FDB913 22.22%, #FF7A00 71.71%);
+}
+
+.blackfriday22-category__item:hover .blackfriday22-category__name {
+  color: #FDB913 !important;
+}
+
+.blackfriday22-category__item.active .blackfriday22-category__figure {
+  background: -o-linear-gradient(6.1deg, #FDB913 22.22%, #FF7A00 71.71%);
+  background: linear-gradient(83.9deg, #FDB913 22.22%, #FF7A00 71.71%);
+}
+
+.blackfriday22-category__item.active .blackfriday22-category__name {
+  color: #FDB913;
+}
+
 .blackfriday22-category__figure {
   border-radius: 50%;
   overflow: hidden;
