@@ -231,6 +231,7 @@
 
 .blackfriday22-content {
   padding: 45px 0;
+  margin-bottom: 97px;
 }
 
 .blackfriday22-content__body {
@@ -329,6 +330,200 @@
   font-size: 22px;
   line-height: 166.4%;
   color: #F6F4F3;
+}
+
+.blackfriday22-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blackfriday22-category__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.blackfriday22-category__figure {
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #F6F4F3;
+  border: 5px solid #0D0D0D;
+  margin: 0 0 4px;
+  padding: 10px 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blackfriday22-category__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 166.4%;
+  color: #F6F4F3;
+}
+
+.blackfriday22-block {
+  margin-bottom: 185px;
+}
+
+.blackfriday22-block__body {
+  text-align: center;
+}
+
+.blackfriday22-block__figure {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.blackfriday22-block__figure img {
+  display: block;
+  margin: 0 auto;
+}
+
+.blackfriday22-block__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.blackfriday22-block__btn {
+  display: block;
+  width: 100%;
+  max-width: 179px;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0;
+  border-radius: 12px;
+  padding: 11px;
+  cursor: pointer;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 166.4%;
+  color: #000000;
+  background: -o-linear-gradient(358.19deg, #FDB913 1.5%, #FDAC0F 98.44%);
+  background: linear-gradient(91.81deg, #FDB913 1.5%, #FDAC0F 98.44%);
+  opacity: 0.5;
+}
+
+.blackfriday22-block__btn:before {
+  content: "";
+  position: absolute;
+  top: -23px;
+  background-color: #FDB913;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.blackfriday22-block__btn.bottom-left:before {
+  top: auto;
+  bottom: -18px;
+  left: -12px;
+}
+
+.blackfriday22-block__btn.bottom-right:before {
+  top: auto;
+  bottom: -18px;
+  right: -12px;
+}
+
+.blackfriday22-block__btn.bottom-center:before {
+  top: auto;
+  bottom: -23px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.blackfriday22-block__btn.top-left:before {
+  top: -18px;
+  left: -12px;
+}
+
+.blackfriday22-block__btn.top-right:before {
+  top: -18px;
+  right: -12px;
+}
+
+.blackfriday22-block__btn.top-center:before {
+  top: -18px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.blackfriday22-block__btn.label-1 {
+  position: absolute;
+  top: 185px;
+  left: 86px;
+}
+
+.blackfriday22-block__btn.label-2 {
+  position: absolute;
+  bottom: 125px;
+  left: 74px;
+}
+
+.blackfriday22-block__btn.label-3 {
+  position: absolute;
+  top: 167px;
+  right: 189px;
+}
+
+.blackfriday22-block__btn.label-4 {
+  position: absolute;
+  bottom: 92px;
+  right: 49px;
+}
+
+.blackfriday22-block__btn.label-5 {
+  position: absolute;
+  left: 39.5%;
+  top: 309px;
+}
+
+.blackfriday22-block__category {
+  margin-top: -72px;
+  position: relative;
 }
 
 @media only screen and (max-width: 767px) {

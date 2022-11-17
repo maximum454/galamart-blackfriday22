@@ -1,0 +1,30 @@
+.blackfriday22-category{
+  display: flex;
+  justify-content: center;
+  &__body{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__item{
+  }
+  &__figure{
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #F6F4F3;
+    border: 5px solid #0D0D0D;
+    margin: 0 0 4px;
+    padding: 10px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  &__name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 166.4%;
+    color: #F6F4F3;
+  }
+}
