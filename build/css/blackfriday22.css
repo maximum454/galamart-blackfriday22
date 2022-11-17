@@ -248,6 +248,37 @@
   color: #0D0D0D;
 }
 
+.blackfriday22-all__body {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blackfriday22-all__figure {
+  border-radius: 50%;
+  margin: 0;
+  z-index: 1;
+}
+
+.blackfriday22-all__content {
+  max-width: 639px;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: -189px;
+}
+
+.blackfriday22-all__content p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 166.4%;
+  color: #F6F4F3;
+}
+
 @media only screen and (max-width: 767px) {
   .d-desktop-none {
     display: block;

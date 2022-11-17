@@ -1,0 +1,27 @@
+.blackfriday22-all{
+  &__body{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+  }
+  &__figure{
+    border-radius: 50%;
+    margin: 0;
+    z-index: 1;
+  }
+  &__content{
+    max-width: 639px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: -189px;
+    p{
+      margin: 0;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 166.4%;
+      color: #F6F4F3;
+    }
+  }
+}
