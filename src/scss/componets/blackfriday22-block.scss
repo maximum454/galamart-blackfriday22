@@ -3,6 +3,12 @@
   &__body{
     text-align: center;
   }
+  &__bg{
+    background-color: #000000;
+    &.light{
+      background-color: #F6F4F3;
+    }
+  }
   &__figure{
     position: relative;
     width: fit-content;
@@ -44,6 +50,9 @@
     color: #000000;
     background: linear-gradient(91.81deg, #FDB913 1.5%, #FDAC0F 98.44%);
     opacity: .5;
+    &:hover{
+      opacity: 1;
+    }
     &:before{
       content: '';
       position: absolute;

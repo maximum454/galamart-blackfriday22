@@ -266,6 +266,10 @@
   max-width: none;
 }
 
+.blackfriday22-quotes {
+  margin-bottom: 145px;
+}
+
 .blackfriday22-quotes__body {
   max-width: 1150px;
   margin: 0 auto;
@@ -299,6 +303,10 @@
   font-size: 24px;
   line-height: 166.4%;
   color: #0D0D0D;
+}
+
+.blackfriday22-all {
+  margin-bottom: 165px;
 }
 
 .blackfriday22-all__body {
@@ -385,6 +393,14 @@
   text-align: center;
 }
 
+.blackfriday22-block__bg {
+  background-color: #000000;
+}
+
+.blackfriday22-block__bg.light {
+  background-color: #F6F4F3;
+}
+
 .blackfriday22-block__figure {
   position: relative;
   width: -webkit-fit-content;
@@ -439,6 +455,10 @@
   background: -o-linear-gradient(358.19deg, #FDB913 1.5%, #FDAC0F 98.44%);
   background: linear-gradient(91.81deg, #FDB913 1.5%, #FDAC0F 98.44%);
   opacity: 0.5;
+}
+
+.blackfriday22-block__btn:hover {
+  opacity: 1;
 }
 
 .blackfriday22-block__btn:before {
