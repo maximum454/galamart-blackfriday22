@@ -55,12 +55,6 @@
   padding: 0;
 }
 
-body {
-  background-color: #13081C !important;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
 .wrp {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -137,6 +131,22 @@ body {
 
 .blackfriday22-hero {
   height: 500px;
+  position: relative;
+}
+
+.blackfriday22-hero:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 164px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+      -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 .blackfriday22-hero__body {
@@ -159,7 +169,12 @@ body {
   margin: 0;
   position: absolute;
   top: 0;
-  right: -130px;
+  left: 513px;
+  z-index: 1;
+}
+
+.blackfriday22-hero__photo img {
+  max-width: none;
 }
 
 .blackfriday22-content {
@@ -191,7 +206,11 @@ body {
   margin: 0;
   position: absolute;
   top: 0;
-  left: 66.8%;
+  left: 768px;
+}
+
+.blackfriday22-content__figure img {
+  max-width: none;
 }
 
 @media only screen and (max-width: 767px) {
