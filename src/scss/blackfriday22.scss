@@ -95,7 +95,43 @@
 }
 
 
-
+.remodal{
+	max-width: 734px;
+	background-color: #0D0D0D;
+	text-align: left;
+	padding: 87px 29px 65px 32px ;
+	border: 5px solid #F6F4F3;
+}
+.remodal-close{
+	top: 20px;
+	right: 20px;
+	left: auto;
+	width: 33px;
+	height: 33px;
+}
+.remodal-close:before{
+	content: '';
+	background-image: url("../img/remodal-close.svg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+.remodal p{
+	font-family: $font1;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #F6F4F3;
+	margin: 0 0 20px;
+	span{
+		
+	}
+}
+.remodal small{
+	font-size: 11px;
+	line-height: 12px;
+}
 
 @import "componets/blackfriday22-hero";
 @import "componets/blackfriday22-content";

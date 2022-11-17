@@ -27,6 +27,14 @@
 
 @font-face {
   font-family: "Montserrat";
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
   src: local("Montserrat-Light"), url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
@@ -127,6 +135,45 @@
   color: #000000;
   background: -o-linear-gradient(358.19deg, #FDB913 1.5%, #FDAC0F 98.44%);
   background: linear-gradient(91.81deg, #FDB913 1.5%, #FDAC0F 98.44%);
+}
+
+.remodal {
+  max-width: 734px;
+  background-color: #0D0D0D;
+  text-align: left;
+  padding: 87px 29px 65px 32px;
+  border: 5px solid #F6F4F3;
+}
+
+.remodal-close {
+  top: 20px;
+  right: 20px;
+  left: auto;
+  width: 33px;
+  height: 33px;
+}
+
+.remodal-close:before {
+  content: "";
+  background-image: url("../img/remodal-close.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.remodal p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F6F4F3;
+  margin: 0 0 20px;
+}
+
+.remodal small {
+  font-size: 11px;
+  line-height: 12px;
 }
 
 .blackfriday22-hero {
