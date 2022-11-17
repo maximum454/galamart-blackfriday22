@@ -1,0 +1,27 @@
+.blackfriday22-content{
+  padding: 45px 0;
+  &__body{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  &__text{
+    width: 100%;
+    max-width: 680px;
+    padding: 0 39px;
+    p{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 166.4%;
+      color: #F6F4F3;
+      margin: 0 0 62px;
+    }
+  }
+  &__figure{
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 66.8%;
+  }
+}

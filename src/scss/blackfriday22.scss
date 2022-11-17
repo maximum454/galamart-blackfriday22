@@ -27,12 +27,9 @@ body{
 .wrp {
 	position: relative;
 	font-family: $font1;
-	color: #BCFFFB;
+	color: #ffffff;
 	overflow: hidden;
 	background-color: #000000;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-bottom: 147px;
 }
 
 
@@ -83,31 +80,32 @@ body{
 
 .blackfriday22-btn{
 	display: block;
-	max-width: fit-content;
-	margin: 0 auto;
+	width: 100%;
+	max-width: 411px;
+	margin: 0;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
 	user-select: none;
-	border: 1px solid #0DBA6C;
-	border-radius: 5px;
-	padding: 17px 70px 16px;
+	border: 0;
+	border-radius: 0;
+	padding: 9px 70px;
 	cursor: pointer;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	text-decoration: none;
 	font-family: $font1;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 14px;
-	line-height: 17px;
-	color: #BCFFFB;
-	background-color: transparent;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 166.4%;
+	color: #000000;
+	background: linear-gradient(91.81deg, #FDB913 1.5%, #FDAC0F 98.44%);
 }
 
 
 
 
 @import "componets/blackfriday22-hero";
+@import "componets/blackfriday22-content";
 
 
 

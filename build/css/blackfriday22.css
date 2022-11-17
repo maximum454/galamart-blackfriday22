@@ -1,0 +1,205 @@
+/*
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+
+/*
+  Maintain ratio mixin.
+  @param {List} [$ratio] Ratio the element needs to maintain. A 16:9 ratio would look like this:
+  .element { @include maintain-ratio(16 9); }
+*/
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Bold"), url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Light"), url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-search.only-mobile {
+  position: relative;
+  margin: 0 -15px;
+  padding: 0 15px;
+  background-color: #ffffff;
+}
+
+.main {
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.main > .container {
+  max-width: 100%;
+  padding: 0;
+}
+
+body {
+  background-color: #13081C !important;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.wrp {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.container {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-desktop-none {
+  display: none;
+}
+
+.d-mobile-none {
+  display: block;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.blackfriday22-btn {
+  display: block;
+  width: 100%;
+  max-width: 411px;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0;
+  border-radius: 0;
+  padding: 9px 70px;
+  cursor: pointer;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 166.4%;
+  color: #000000;
+  background: -o-linear-gradient(358.19deg, #FDB913 1.5%, #FDAC0F 98.44%);
+  background: linear-gradient(91.81deg, #FDB913 1.5%, #FDAC0F 98.44%);
+}
+
+.blackfriday22-hero {
+  height: 500px;
+}
+
+.blackfriday22-hero__body {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.blackfriday22-hero__logo {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 69, 69, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(top, rgba(69, 69, 69, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgba(69, 69, 69, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 572px;
+  margin: 0;
+  padding: 46px 39px;
+}
+
+.blackfriday22-hero__photo {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: -130px;
+}
+
+.blackfriday22-content {
+  padding: 45px 0;
+}
+
+.blackfriday22-content__body {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.blackfriday22-content__text {
+  width: 100%;
+  max-width: 680px;
+  padding: 0 39px;
+}
+
+.blackfriday22-content__text p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 166.4%;
+  color: #F6F4F3;
+  margin: 0 0 62px;
+}
+
+.blackfriday22-content__figure {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 66.8%;
+}
+
+@media only screen and (max-width: 767px) {
+  .d-desktop-none {
+    display: block;
+  }
+
+  .d-mobile-none {
+    display: none !important;
+  }
+}
