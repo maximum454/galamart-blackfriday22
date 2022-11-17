@@ -1,0 +1,80 @@
+.newyear2023-hero{
+  margin-bottom: 11px;
+  padding-top: 79px;
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../img/hero-decor.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 635px;
+    height: 429px;
+    pointer-events: none;
+    z-index: 10;
+  }
+  &__body{
+    max-width: 1252px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__title-img{
+    margin-bottom: 15px;
+    margin-left: 23px;
+    img{
+    }
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 57px;
+    gap: 20px;
+  }
+  &__text{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #BCFFFB;
+    max-width: 363px;
+  }
+  &__img{
+  }
+  @include r(1023){
+    &__title-img{
+      margin-left: 0;
+    }
+    &__row{
+      padding-left: 0;
+    }
+  }
+  @include r(767){
+    padding-top: 35px;
+    margin-bottom: 31px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      background-image: url("../img/hero-decor.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 348px;
+      height: 180px;
+    }
+    &__title-img{
+      margin-bottom: 7px;
+    }
+    &__text{
+      min-width: 135px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    &__row{
+      gap: 10px;
+    }
+  }
+}
