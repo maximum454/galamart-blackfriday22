@@ -361,27 +361,51 @@
 
 .blackfriday22-category__item {
   text-decoration: none !important;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .blackfriday22-category__item:hover {
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .blackfriday22-category__item:hover .blackfriday22-category__figure {
-  background: -o-linear-gradient(6.1deg, #FDB913 22.22%, #FF7A00 71.71%);
-  background: linear-gradient(83.9deg, #FDB913 22.22%, #FF7A00 71.71%);
+  background-image: -o-linear-gradient(6.1deg, #FDB913 22.22%, #FF7A00 71.71%);
+  background-image: linear-gradient(83.9deg, #FDB913 22.22%, #FF7A00 71.71%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .blackfriday22-category__item:hover .blackfriday22-category__name {
   color: #FDB913 !important;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.blackfriday22-category__item.active {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .blackfriday22-category__item.active .blackfriday22-category__figure {
-  background: -o-linear-gradient(6.1deg, #FDB913 22.22%, #FF7A00 71.71%);
-  background: linear-gradient(83.9deg, #FDB913 22.22%, #FF7A00 71.71%);
+  background-image: -o-linear-gradient(6.1deg, #FDB913 22.22%, #FF7A00 71.71%);
+  background-image: linear-gradient(83.9deg, #FDB913 22.22%, #FF7A00 71.71%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .blackfriday22-category__item.active .blackfriday22-category__name {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   color: #FDB913;
 }
 
@@ -401,6 +425,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.blackfriday22-category__figure--revers {
+  background-color: #000000;
+  border: 5px solid #F6F4F3;
 }
 
 .blackfriday22-category__name {
@@ -409,6 +441,9 @@
   font-size: 14px;
   line-height: 166.4%;
   color: #F6F4F3;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .blackfriday22-block {
@@ -451,6 +486,102 @@
   z-index: 1;
 }
 
+.blackfriday22-block__label--block1 .label-1 {
+  position: absolute;
+  top: 185px;
+  left: 86px;
+}
+
+.blackfriday22-block__label--block1 .label-2 {
+  position: absolute;
+  bottom: 125px;
+  left: 74px;
+}
+
+.blackfriday22-block__label--block1 .label-3 {
+  position: absolute;
+  top: 167px;
+  right: 189px;
+}
+
+.blackfriday22-block__label--block1 .label-4 {
+  position: absolute;
+  bottom: 92px;
+  right: 49px;
+}
+
+.blackfriday22-block__label--block1 .label-5 {
+  position: absolute;
+  left: 39.5%;
+  top: 309px;
+}
+
+.blackfriday22-block__label--block2 .label-1 {
+  position: absolute;
+  top: 78px;
+  left: 137px;
+}
+
+.blackfriday22-block__label--block2 .label-2 {
+  position: absolute;
+  bottom: 231px;
+  left: 281px;
+}
+
+.blackfriday22-block__label--block2 .label-3 {
+  position: absolute;
+  top: 198px;
+  left: 419px;
+}
+
+.blackfriday22-block__label--block2 .label-4 {
+  position: absolute;
+  bottom: 116px;
+  left: 27px;
+}
+
+.blackfriday22-block__label--block2 .label-5 {
+  position: absolute;
+  right: -53px;
+  top: 279px;
+}
+
+.blackfriday22-block__label--block2 .label-6 {
+  position: absolute;
+  right: -53px;
+  bottom: 141px;
+}
+
+.blackfriday22-block__label--block3 .label-1 {
+  position: absolute;
+  left: 56px;
+  top: 311px;
+}
+
+.blackfriday22-block__label--block3 .label-2 {
+  position: absolute;
+  top: 194px;
+  left: 475px;
+}
+
+.blackfriday22-block__label--block3 .label-3 {
+  position: absolute;
+  bottom: 99px;
+  right: 295px;
+}
+
+.blackfriday22-block__label--block3 .label-4 {
+  position: absolute;
+  top: 311px;
+  left: 370px;
+}
+
+.blackfriday22-block__label--block3 .label-5 {
+  position: absolute;
+  top: 178px;
+  right: 85px;
+}
+
 .blackfriday22-block__btn {
   display: block;
   width: 100%;
@@ -467,11 +598,9 @@
   border-radius: 12px;
   padding: 11px;
   cursor: pointer;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -485,6 +614,9 @@
 
 .blackfriday22-block__btn:hover {
   opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .blackfriday22-block__btn:before {
@@ -537,34 +669,20 @@
           transform: translate(-50%, 0);
 }
 
-.blackfriday22-block__btn.label-1 {
-  position: absolute;
-  top: 185px;
-  left: 86px;
+.blackfriday22-block__btn.left-center:before {
+  top: 50%;
+  left: -18px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
-.blackfriday22-block__btn.label-2 {
-  position: absolute;
-  bottom: 125px;
-  left: 74px;
-}
-
-.blackfriday22-block__btn.label-3 {
-  position: absolute;
-  top: 167px;
-  right: 189px;
-}
-
-.blackfriday22-block__btn.label-4 {
-  position: absolute;
-  bottom: 92px;
-  right: 49px;
-}
-
-.blackfriday22-block__btn.label-5 {
-  position: absolute;
-  left: 39.5%;
-  top: 309px;
+.blackfriday22-block__btn.right-center:before {
+  top: 50%;
+  right: -18px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .blackfriday22-block__category {

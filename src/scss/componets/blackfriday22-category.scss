@@ -8,20 +8,27 @@
   }
   &__item{
     text-decoration: none!important;
+    transition: all .3s ease;
     &:hover{
       cursor: pointer;
+      transition: all .3s ease;
       .blackfriday22-category__figure{
-        background: linear-gradient(83.9deg, #FDB913 22.22%, #FF7A00 71.71%);
+        background-image: linear-gradient(83.9deg, #FDB913 22.22%, #FF7A00 71.71%);
+        transition: all .3s ease;
       }
       .blackfriday22-category__name{
         color: #FDB913!important;
+        transition: all .3s ease;
       }
     }
     &.active{
+      transition: all .3s ease;
       .blackfriday22-category__figure{
-        background: linear-gradient(83.9deg, #FDB913 22.22%, #FF7A00 71.71%);
+        background-image: linear-gradient(83.9deg, #FDB913 22.22%, #FF7A00 71.71%);
+        transition: all .3s ease;
       }
       .blackfriday22-category__name{
+        transition: all .3s ease;
         color: #FDB913;
       }
     }
@@ -36,7 +43,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    transition: all .3s ease;
+    &--revers{
+      background-color: #000000;
+      border: 5px solid #F6F4F3;
+    }
   }
   &__name{
     font-style: normal;
@@ -44,5 +55,6 @@
     font-size: 14px;
     line-height: 166.4%;
     color: #F6F4F3;
+    transition: all .3s ease;
   }
 }
