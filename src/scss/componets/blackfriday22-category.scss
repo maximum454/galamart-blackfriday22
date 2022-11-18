@@ -57,4 +57,11 @@
     color: #F6F4F3;
     transition: all .3s ease;
   }
+  @include r(767){
+    &__body{
+      flex-wrap: wrap;
+      gap: 4px 20px;
+      justify-content: center;
+    }
+  }
 }

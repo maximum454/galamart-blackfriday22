@@ -195,4 +195,16 @@
     margin-top: -72px;
     position: relative;
   }
+  @include r(767){
+    margin-bottom: 135px;
+    &__figure{
+      margin: 0 -36px;
+    }
+    &__label{
+      display: none;
+    }
+    &__category{
+      margin-top: -48px;
+    }
+  }
 }

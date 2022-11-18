@@ -134,6 +134,14 @@
 	}
 }
 
+
+@include r(767){
+	.blackfriday22-btn{
+		padding: 15px 10px;
+		font-size: 16px;
+		line-height: 166.4%;
+	}
+}
 @import "componets/blackfriday22-hero";
 @import "componets/blackfriday22-content";
 @import "componets/blackfriday22-quotes";

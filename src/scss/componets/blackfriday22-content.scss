@@ -6,10 +6,13 @@
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
+    display: flex;
+    gap: 20px;
   }
   &__text{
     width: 100%;
     max-width: 680px;
+    flex: 1 0 680px;
     padding: 0 39px;
     p{
       font-weight: 700;
@@ -26,6 +29,47 @@
     left: 768px;
     img{
       max-width: none;
+    }
+  }
+  @include r(1023){
+    &__text{
+      width: auto;
+      flex: 1 0;
+      max-width: 680px;
+
+      padding: 0;
+      p{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 166.4%;
+        color: #F6F4F3;
+        margin: 0 0 62px;
+      }
+    }
+    &__figure{
+      flex-shrink: 0;
+      position: relative;
+      left: 0;
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+  @include r(767){
+    padding: 35px 0;
+    margin-bottom: 32px;
+    &__text{
+      flex: 1 0 100%;
+      max-width: 100%;
+      padding: 0;
+      p{
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 32px;
+      }
+    }
+    &__figure{
+      display: none;
     }
   }
 }

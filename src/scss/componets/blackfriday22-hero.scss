@@ -33,4 +33,45 @@
       max-width: none;
     }
   }
+
+  @include r(1023){
+    overflow: hidden;
+    height: auto;
+    &:after{
+      height: 100px;
+    }
+    &__logo{
+      width: 400px;
+    }
+    &__photo{
+      left: 400px;
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+  @include r(767){
+    height: 345px;
+    &__body{
+      padding: 0;
+      height: 100%;
+    }
+    &__logo{
+      width: 100%;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+      padding: 12px 17px;
+      img{
+        max-width: 310px;
+      }
+    }
+    &__photo{
+      left:auto;
+      right: -100px;
+      top: auto;
+      bottom: 0;
+      img{
+        max-width: 333px;
+      }
+    }
+  }
 }

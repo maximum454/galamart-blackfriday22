@@ -27,4 +27,48 @@
       color: #0D0D0D;
     }
   }
+  @include r(1023){
+    &__body{
+      padding: 0;
+      display: block;
+    }
+    &__figure{
+      position: absolute;
+      top: calc(100% - 100px);
+      right: 0;
+      max-width: 200px;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    &__content{
+      padding: 42px 20px 68px;
+      max-width: 100%;
+      width: 100%;
+      margin-left: 0;
+      p{
+        margin: 0;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 166.4%;
+        color: #0D0D0D;
+      }
+    }
+  }
+  @include r(767){
+    margin-bottom: 152px;
+    &__figure {
+      position: absolute;
+      top: calc(100% - 66px);
+      right: 0;
+      max-width: 128px;
+    }
+    &__content{
+      p{
+        font-size: 16px;
+        line-height: 166.4%;
+      }
+    }
+  }
 }
