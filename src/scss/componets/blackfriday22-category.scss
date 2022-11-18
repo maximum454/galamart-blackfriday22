@@ -63,5 +63,9 @@
       gap: 4px 20px;
       justify-content: center;
     }
+    &__item{
+      flex: 1 0 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
   }
 }

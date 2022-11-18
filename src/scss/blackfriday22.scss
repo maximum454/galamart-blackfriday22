@@ -136,10 +136,33 @@
 
 
 @include r(767){
+	.wrp {
+		padding-bottom: 108px;
+	}
 	.blackfriday22-btn{
 		padding: 15px 10px;
 		font-size: 16px;
 		line-height: 166.4%;
+	}
+	.remodal{
+		max-width: 367px;
+		padding: 95px 18px 28px;
+	}
+	.remodal-close{
+		top: 32px;
+		right: 20px;
+		width: 26px;
+		height: 26px;
+	}
+	.remodal p{
+		font-size: 14px;
+		line-height: 17px;
+		margin: 0 0 24px;
+		&.small{
+			font-size: 11px;
+			line-height: 12px;
+			margin-top: -27px;
+		}
 	}
 }
 @import "componets/blackfriday22-hero";

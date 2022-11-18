@@ -25,4 +25,44 @@
       color: #F6F4F3;
     }
   }
+  @include r(767){
+    margin-bottom: 100px;
+    &__figure{
+      border-radius: 50%;
+      margin: 0;
+      z-index: 1;
+      img{
+        max-width: 206px;
+        height: auto;
+      }
+    }
+    &__content{
+      max-width: 639px;
+      width: 100%;
+      margin-top: -45px;
+      margin-left: -75px;
+      p{
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 166.4%;
+      }
+    }
+  }
+  @include r(413){
+    margin-bottom: 100px;
+    &__figure{
+      display: none;
+    }
+    &__content{
+      max-width: 639px;
+      width: 100%;
+      margin-top: 0;
+      margin-left: 0;
+      p{
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 166.4%;
+      }
+    }
+  }
 }
