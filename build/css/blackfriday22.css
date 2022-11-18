@@ -71,14 +71,6 @@
   background-color: #000000;
 }
 
-.container {
-  max-width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
 .d-none {
   display: none !important;
 }
@@ -104,6 +96,10 @@
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.main {
+  padding-bottom: 0;
 }
 
 .blackfriday22-btn {
